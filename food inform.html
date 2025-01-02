@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Ordered People's Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+    <h1>Ordered People's Information</h1>
+
+    </center>
+
+    <div class="form-container">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+            <label for="food type">food type:</label>
+            <input type="number" id="food" name="food" placeholder="Enter food" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter address" required>
+
+            <label for="Quantity">Quantity:</label>
+            <select id="Quantity" name="Quantity" required>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">Three></option>
+            </select>
+
+            <label for="comments">Additional Comments about food:</label>
+            <textarea id="comments" name="comments" placeholder="Enter any additional comments" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
