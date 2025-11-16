@@ -29,210 +29,581 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
-food.html
-<html>
-    <head>
-        <title>BITE BLISS</title>
-    </head>
-    <style>
-    body{
-        background-image: url(foodpp.jpg);
-        background-size: cover;
-        background-color:wheat;
-        background-position:center;
-        background-blend-mode: color;
-        
-    }
-    </style>
-    <ul class="menu-items">
-        <li><a href="#HOME">HOME</a></li><br>
-        <li><a href="#menu">MENU</a></li>
-    </ul>
+home.html
 
-        <center><h1> BITE BLISS</h1></center>
-        <center><P>SAVOR THE FLAVOR,SAVOR THE MOMENT</P></center>
-        <hr>
-        <center><p style="font-size: medium;font-style: italic;font-weight: bold;">Welcome to Bite Bliss resturant,Where the art of fine dining meets the warmth of a home-cooked meal. Our chefs are inspired by the
-             freshest ingredients and the richest flavours from around the world, crafting dishes that are both fimiliar and innovative. From the crackle of
-             our wood-fired oven to the sparkle of our expertly curated wine list, every detail is designed to transport you to a place of comfort and joy.
-             Whether you're gathering with friends, celebrating a special occasions, or simply savoring a quiet night out,our resturant is your HEAVEN.come,let us
-            feed your body and nourish your soul.</p></center>
-        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"style="font-size:medium"><h3><center>
-        <table>
-            <tr>
-                <td><img src="CHICKEN POPCORN.jpg" width="200" height="200"></td>
-                <td><img src="PIZZA.jpg" width="200" height="200"></td>
-                <td><img src="cheese pasta.jpg" width="200" height="200"></td>
-            </tr>
-            <tr>
-                <td><h3><center>CHICKEN POPCORN<br>Price:299</center></h3></td>
-                <td><h3><center>PIZZA<br>Price:199</center></h3></td>
-                <td><h3><center>CHEESE PASTA<br>Price:249</center></h3></td>
-            </tr>
-        <center>
-            <tr>
-                <center>INDULGE IN THE ART OF FINE DINING✔</center><br>
-            </tr>
-        </center>
-            <h2><center>100+ DISHES ARE AVAILABLE</center></h2>
-            <h2><center>OPENING OFFER 50% Discount</center></h2>
-            <hr>
-            <h3>FIND IT!EAT IT!
-            </h3>
-        </table>
-        <hr>
-        <section id="menu">
-            <a href="C:\Users\Janani S\restweb\menu.html">FOR MORE MENU</a>
-        </section>
-
-
-
-        <br>
-        <section id="click here">
-            <div class="form-container">
-                <a href="C:\Users\Janani S\restweb\food inform.html">ORDER</a>
-            </div>
-        </section>
-menu.html
-<html>
-    <head>
-        <title>FOOD MENU</title>
-        <Center>
-            <hr>
-            <hr>
-            <h1>
-            <caption>BITE BLISS</caption><br>
-            </h1>
-            <h2> FOOD MENU</h2>
-        </Center>
-            <hr>
-            <hr><br>
-            <center>
-            <h1>SAMOSA<br>
-            <img src="samosa.jpg" width="200" height="200">
-            <br>PRICE:32</h1><br><hr>
-            <h1>BREAD OMELETTE<br>
-            <img src="bread oml.jpg" width="200" height="200">
-            <br>PRICE:60</h1><br><hr>
-            <h1>CHICKEN PUFFS<br>
-            <img src="c puffs.jpg" width="200" height="200">
-            <br>PRICE:30</h1><br><hr>
-            <h1> VEG PUFFS<br>
-            <img src="v puffs.jpg" width="200" height="200">
-            <br>PRICE:25</h1><br><hr>
-            <h1>COFFEE<br>
-            <img src="coffee.jpg" width="200" height="200">
-            <br>PRICE:30</h1><br><hr>
-            <h1>FETTUCCINE ALFEREDO:<br>
-            <img src="a f.jpg" width="200" height="200">
-            <br>PRICE:239</h1><br><hr>
-            <h1>MASALA PURI<br>
-            <img src="masala puri.jpg" width="200" height="200"><br>
-            <br>PRICE:45</h1><br><hr>
-            <h1>PANI PURI<br>
-            <img src="pani puri.jpg" width-="200" height="120">
-            <br>PRICE:50</h1><br><hr>
-            <h1>GOBI 65<br>
-            <img src="gobi 65.jpg" width="200" height="200">
-            <br>PRICE:60</h1>
-            </center>
-         </head>
-         <body style="background-color:darkgrey;">
-            <style>
-                h1,h2{
-                    font-family:Georgia, 'Times New Roman', Times, serif ;
-                    font-size:x-large ;
-                    font-style:bold;
-                    color:black;
-                }
-            </style>
-</html>
-food inform.html
 <html>
 <head>
-    <title>Ordered People's Information</title>
+    <link href="design.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+  
+  <title>INDIAN CUISINE</title>
+  <style>
+    
+    .navi
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    .banner {
+      background-image: url("food.avif"); 
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(241, 238, 238);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      word-spacing: 30;
+    }
+
+    .banner h1 {
+
+      font-family:cursive;
+      font-size: 60px;
+      margin: 0;
+      font-weight: bold;
+    }
+    .box-section {
+  display: flex;
+  flex-direction: row;     
+  justify-content: flex-start;
+  gap: 50px;               
+  margin-top: 40px;       
+  margin-left: 40px;   
+  margin-right: 40px;   
+}
+
+.info-box {
+  background-color:rgb(100, 86, 94);
+  color: whitesmoke;
+  width: 800px;
+  height: 410px;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.menu-content h3 {
+  margin-left: 50;
+  font-size: 20px;
+  margin-bottom: 4px;
+
+}
+.menu-content h2 {
+  margin-left: 50;
+  font-size: 20px;
+  margin: top 2px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.menu-content p {
+  margin-left: 50;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.image
+{
+  margin-left: 60;
+ 
+}
+  </style>
+</head>
+<body>
+    <div class="navi">
+    <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="menu.html">MENU</a>
+
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="team.html">ADMINISTRATION</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+  <div class="banner">
+    <h1>THE INDIAN ESSENCE</h1> 
+  </div>
+  
+    <div class="box-section">
+        <div class="info-box">
+          <div class="menu-content">
+            <center>
+              <h2 ">Our New Menu:</h2>
+                
+              <img class="image" src="tofu-tikka-masala.webp" height="200" width="200">
+                <br>
+
+              <h3 style="margin-top: 4;">*   TOFU TIKKA MASALA</h3>
+              <p>A INDIAN FUSION OF TOFU WITH MOUTH WATERING MASALA</p>
+
+              <h3 style="margin-top: 4;">*  MALAI PANEER  </h3>
+              <p>A CREAMY ,WHITE CURRY MADE WITH PANEER CHEESE</p>
+            </center>
+          </div>
+        </div>
+          
+          
+        <div class="info-box">
+          <div class="menu-content">
+            <center>
+              <h2 style="margin-left: 50 ;">Book Your Table:</h2>
+              <img class="image" src="tables.jpeg" width="225" height="225" style="margin-left: 70;">
+              <br>
+              <h3 style="margin-top: 9;margin-left: 70;">  Book your seats online now !!</h3>
+              <p style="margin-top: 9;margin-left: 70;">Have a great time with your family and friends..</p>
+              <p style="margin-top: 9;margin-left: 70;">Book your table atleast before 1 day at our website</p>
+            </center>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="menu-content">
+            <center>
+              <h2 style="margin-left:100;">Opening Hours :</h2>
+              <img class="image" src="images.jpeg" width="225" height="225" style="margin-left: 100;">
+              <br>
+             
+              <h3 style="margin-top: 9;margin-left: 90;">  Opens at !!</h3>
+              <p style="margin-top: 9;margin-left: 90;">Day : Monday - Sunday</p>
+              <p style="margin-top: 9;margin-left: 90;">Timings : 1:00am to 11:00pm </p>
+
+            </center>
+          </div>
+        </div>
+        
+        
+      </div>
+    
+</body>
+<footer style="background-color:rgba(6, 8, 5, 0.581);height: 150;width: 1600px;color: white;text-align: center;font-family: cursive;font-size: 5;margin-top:30;">
+    <h2 style="font-size:medium; margin-top: 4;">IndianCEmail@gmail.com </h2> <h2 style="font-size:medium;">📞Contact number : +91 6369869924</h2><br>
+    <h2 style="font-size:medium;">Address  : No 8, Ghandhi street ,Anna nagar ,Chennai</h2>
+    <br>
+    <h2 style="font-size:medium;">----------❤️DEVELOPED BY MADHUMITHA B❤️--------- </h2>
+</footer>
+
+</html>
+
+menu.html
+
+<html>
+<head>
+    <link href="design.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+  
+  <title>Indian Cuisine</title>
+  <style>
+    .navi {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .menu-section {
+      background-color: #db9a44;
+      padding: 30px;
+      color: #fff;
+      text-align: center;
+      font-family: 'times new roman';
+      font-weight: bold;
+    }
+
+    .menu-title {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .menu-card {
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-align: center;
+      border: 1px solid #D4AF37;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .menu-card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #8B0000;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="navi">
+    <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="menu.html">MENU</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="team.html">Golden Pagodas TEAM</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="menu-section">
+      <h2 class="menu-title">Flavors Of India</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="mutton.jpeg" alt="mutton"><br><br>
+          <h3>Madurai Mutton Chukka</h3>
+          <p>Boneless mutton pieces slow-cooked with dry-roasted spices and shallots. Dry, spicy, and packed with intense flavor.
+
+</p>
+        </div>
+        <div class="menu-card">
+          <img src="chenna poda.jpeg" alt="Sweet  Savoury"><br><br>
+          <h3>Chhena Poda </h3>
+          <p>A sweet made by baking fresh cottage cheese mixed with sugar, cardamom, and semolina. It's caramelized and has a smoky flavor.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Bhutte Ka Kees.jpeg" alt="Snack"><br><br>
+          <h3>Bhutte Ka Kees</h3>
+          <p>A spicy street snack made from grated corn cooked with milk, spices, and ghee. Creamy and flavorful with a slight crunch.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Kongunadu Chicken Fry.jpeg" alt="Chicken"><br><br>
+          <h3>Kongunadu Chicken Fry</h3>
+          <p>A dry-style chicken dish from the Kongu region, flavored with freshly ground spices, black pepper, and coconut. Known for its bold, earthy taste.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Machha Chadchadi.jpeg" alt="Fish"><br><br>
+          <h3>Machha Chadchadi</h3>
+          <p>Freshwater fish cooked in a mustard seed and garlic paste with turmeric and raw banana or potato. Pungent and tangy, served with rice.</p>
+        </div>
+        <div class="menu-card">
+          <img src="chicken-kassa-1.jpg" alt="Chiken"><br><br>
+          <h3>Chicken kassa</h3>
+          <p>A dry-style chicken curry where the meat is slow-cooked with a masala of onions, garlic, ginger, and roasted spices until the oil separates. It's bold, earthy, and slightly smoky, often enjoyed with roti or rice.</p>
+        </div>
+        <div class="menu-card">
+          <img src="laal-maas-1.webp" alt="Mutton"><br><br>
+          <h3>Laal Mass</h3>
+          <p>A fiery red mutton curry made with dried mathania chilies and yogurt. It's bold, spicy, and full of rustic flavors.</p>
+        </div>
+        <div class="menu-card">
+          <img src="final-bebica-output-1.webp" alt="Dessert"><br><br>
+          <h3>Bebinca</h3>
+          <p>A traditional Goan layered dessert made with coconut milk, eggs, sugar, and flour. It's rich, dense, and slightly caramelized.</p>
+        </div>
+        <div class="menu-card">
+          <img src="images (1).jpeg" alt="Dessert"><br><br>
+          <h3>Sandesh with Nolen Gur</h3>
+          <p>Soft paneer-based sweet infused with date palm jaggery (nolen gur).</p>
+        </div>
+        <div class="menu-card">
+          <img src="Aam Panna.jpeg" alt="Refresher"><br><br>
+          <h3>Aam Panna</h3>
+          <p>A tangy summer cooler made from raw mango pulp, black salt, and mint. Known to fight heatstroke and refresh instantly.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Lemon Jaljeera.jpeg" alt="Refresher"><br><br>
+          <h3>Lemon Jaljeera </h3>
+          <p>A tangy drink made with lemon juice and jaljeera powder (cumin, black salt, mint). Served cold to beat the heat and boost digestion.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Kokum Sharbat.jpg" alt="Refresher"><br><br>
+
+        <h3>Kokum Sharbat </h3>
+          <p>A tangy, sweet drink made from kokum fruit pulp, cumin, and sugar.</p>
+        </div>
+      </div>
+    </div>
+</body>
+<footer style="background-color:#333;height:150px;width:100%;color:white;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:5px;margin-top:30px;">
+    <h2 style="font-size:medium; margin-top:4px;">Email :IndianCEmail@gmail.com </h2>
+    <h2 style="font-size:medium;">Contact number : +91 6369869924</h2><br>
+    <h2 style="font-size:medium;">Address:Address  : No 8, Ghandhi street ,Anna nagar ,Chennai </h2>
+    <br>
+    <h2 style="font-size:medium;">----------Where Every Region Tells A Story ----------</h2>
+</footer>
+</html>
+
+team.html
+
+<html>
+<head>
+    <link href="design.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+  
+  <title>Golden Pagodas Team - Siju Minfu Chinese Restaurant</title>
+  <style>
+    .navi {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .menu-section {
+      background-color: #ac5600;
+      padding: 30px;
+      color: #fff;
+      text-align: center;
+      font-family: 'times new roman';
+      font-weight: bold;
+      
+    }
+
+    .menu-title {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .menu-card {
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-align: center;
+      border: 1px solid #D4AF37;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .menu-card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      
+      color: #8B0000;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="navi">
+    <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="menu.html">MENU</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="team.html">Golden Pagodas Team</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="menu-section">
+      <h2 class="menu-title">TOP CHEF</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="Sanjeev Kapoor.jpeg" alt="Tanjiro">
+          <h3>Sanjeev Kapoor</h3>
+          <p>A well-known face on Indian television, Sanjeev Kapoor is a celebrity chef and entrepreneur whose recipes are loved across the country.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Vikas Khanna.jpeg" alt="Nezuko">
+          <h3>Vikas Khanna</h3>
+          <p>Vikas Khanna is an Indian-American Michelin star celebrity chef, restaurateur and cookbook writer. He is one of the judges of MasterChef India since its beginning.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Garima Arora.jpeg" alt="Zenitsu">
+          <h3>Garima Arora</h3>
+          <p>Garima Arora is the first Indian woman to receive a Michelin star. She's also a MasterChef India judge. </p>
+        </div>
+        <div class="menu-card">
+          <img src="Manish Mehrotra.jpeg" alt="Inosuke">
+          <h3>Manish Mehrotra</h3>
+          <p>A prominent figure in Indian cuisine, including South Indian flavors, and recognized as one of the top 20 chefs in India</p>
+        </div>
+        <div class="menu-card">
+          <img src="Padma Lakshmi.jpeg" alt="Shinobu">
+          <h3>Padma Lakshmi</h3>
+          <p>Padma Lakshmi is a globally recognized South Indian chef, known for her work on "Top Chef" and the Hulu show "Taste the Nation." She's also a successful cookbook author and food writer.</p>
+        </div>
+        <div class="menu-card">
+          <img src="Mythrayie Iyer.jpeg" alt="Giyu">
+          <h3>Mythrayie Iyer</h3>
+          <p>Mythrayie S Iyer is the head chef at Farmlore, a restaurant known for its cuisine-agnostic approach.</p>
+        </div>
+      </div>
+    </div>
+</body>
+<footer style="background-color:#333;height:150px;width:100%;color:white;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:5px;margin-top:30px;">
+   <br> <h2 style="font-size:medium; margin-top:4px;">Email : IndianCEmail@gmail.com</h2>
+    <h2 style="font-size:medium;">📞Contact number :+91 6369869924</h2><br>
+    <h2 style="font-size:medium;">Address: No 8, Ghandhi street ,Anna nagar ,Chennai</h2>
+    <br>
+    <h2 style="font-size:medium;">----------Where Every Region Tells A Story ----------</h2>
+</footer>
+</html>
+
+contact.html
+
+<html>
+<head>
+    <link href="design.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+  
+    <title>Contact Us -THE INDIAN ESSENCE</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
+    .navi {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    body {
+        background-image: url("bg.avif");
+        background-size: cover;
+    }
+    
+    .contact-section h1 {
+        font-size: 32px;
+        color: #f0e7e7;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    .contact-box {
+        background-color: #167e79;
+        color: white;
+        padding: 20px;
+        margin: 0 auto;
+        width: 700px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        margin-top: 50px;
+        border: 2px solid #D4AF37;
+    }
+
+    .contact-box p {
+        font-size: 16px;
+        margin: 10px 0;
+        margin-top: 20px;
+    }
     </style>
 </head>
 <body>
-    <center>
-
-    <h1>Ordered People's Information</h1>
-
-    </center>
-
-    <div class="form-container">
-        <form action="submit_form.php" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter full name" required>
-
-            <label for="food type">food type:</label>
-            <input type="number" id="food" name="food" placeholder="Enter food" required>
-
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter address" required>
-
-            <label for="Quantity">Quantity:</label>
-            <select id="Quantity" name="Quantity" required>
-                <option value="One">One</option>
-                <option value="Two">Two</option>
-                <option value="Three">Three></option>
-            </select>
-
-            <label for="comments">Additional Comments about food:</label>
-            <textarea id="comments" name="comments" placeholder="Enter any additional comments" rows="4"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+    <div class="navi">
+    <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="menu.html">MENU</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="team.html"> TOP CHEF</a>
+                </li>
+                <li class="nav-item bg-dark mx-3">
+                    <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
+    
+    <div class="contact-section">
+        <br><br>
+        <h1>CONTACT US</h1>
+        <div class="contact-box">
+            <p><strong>Restaurant:</strong> THE INDIAN ESSENCE</p>
+            <p><strong>Address:</strong> </p>
+            <p><strong>Phone:</strong> +91 6369869924</p>
+            <p><strong>Email:</strong> IndianCEmail@gmail.com</p>
+            <p><strong>Reservations:</strong> Recommended for dinner service</p>
+        </div>
+    </div>
 </body>
+<footer style="background-color:#333;height:150px;width:100%;color:white;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:5px;margin-top:30px;">
+   <br><br> <h2 style="font-size:medium; margin-top:4px;">Email : IndianCEmail@gmail.com</h2>
+    <h2 style="font-size:medium;">📞Contact number :+91 6369869924</h2><br>
+    <h2 style="font-size:medium;">Address: Address: No 8, Ghandhi street ,Anna nagar ,Chennai</h2>
+    <br>
+    <h2 style="font-size:medium;">----------❤️DEVELOPED BY MADHUMITHA B❤️----------</h2>
+</footer>
 </html>
 
 ```
-
 ## OUTPUT:
-HOME
-![alt text](<Screenshot 2025-01-02 202532.png>)
 
-MENU
-![alt text](<Screenshot 2025-01-02 202643.png>)
-![alt text](<Screenshot 2025-01-02 202701.png>)
-![alt text](<Screenshot 2025-01-02 202714.png>)
+<img width="1044" height="584" alt="Screenshot 2025-11-16 151108" src="https://github.com/user-attachments/assets/aef69aee-a911-4722-8e74-01d51c692e5b" />
+
+<img width="1036" height="602" alt="Screenshot 2025-11-16 151117" src="https://github.com/user-attachments/assets/7a010db5-18b9-477c-ba09-e990ce8712a8" />
+
+<img width="1038" height="597" alt="Screenshot 2025-11-16 151124" src="https://github.com/user-attachments/assets/4debd4df-af46-4677-8b74-6e463a9fc0a1" />
+
+<img width="1031" height="587" alt="Screenshot 2025-11-16 151131" src="https://github.com/user-attachments/assets/b1d73555-1aa5-435d-a5a2-cfb718ba50fa" />
+
 
 CONTACT
 ![alt text](<Screenshot 2025-01-02 202745.png>)
